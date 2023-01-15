@@ -11,11 +11,12 @@
     <div class="container">
         <form id="registration" novalidate>
         <h2>Создайте новый аккаунт </h2>
-        <div><input type="text" placeholder="Имя" id="name"></div>
-        <div><input type="text" placeholder="Фамилия" id="family"></div>
-        <div><input type="text" placeholder="Имя пользователя" id="login"></div>
-        <div><input type="text" placeholder="Электронная почта" id="email"></div>
-        <div><input type="text" placeholder ="Password" id="password"></div>
+        <div><input type="text" placeholder="Имя" id="name" required></div>
+        <div><input type="text" placeholder="Фамилия" id="family" required></div>
+        <div><input type="text" placeholder="Имя пользователя" id="login" required></div>
+        <div><input type="text" placeholder="Телефонный номер" id="tel" pattern="\+?[0-9\s\-\(\)]+" required>+7(xxx)xxx-xx-xx</div>
+        <div><input type="email" placeholder="Email" id="email" pattern="/^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/i" required></div>
+        <div><input type="text" placeholder ="Пароль" id="password" required></div>
        <div><button type="button" onclick="checkAll();">Регистрация</button></div>
         <div id="errorMessage"></div>
         <div id="success"></div>
